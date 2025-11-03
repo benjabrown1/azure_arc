@@ -2,13 +2,13 @@ using 'main.bicep'
 
 param sshRSAPublicKey = '<your RSA public key>'
 
-param tenantId = '<your tenant id>'
+param tenantId = '8df1cb37-cf1f-4d35-a5fd-3c1da6d897d8'
 
 param windowsAdminUsername = 'arcdemo'
 
-param windowsAdminPassword = '<your windows admin password>'
+param windowsAdminPassword = 'Arcdemopassword'
 
-param logAnalyticsWorkspaceName = '<your unique Log Analytics workspace name>'
+param logAnalyticsWorkspaceName = 'ArcBox-la'
 
 param flavor = 'ITPro'
 
@@ -16,4 +16,4 @@ param deployBastion = false
 
 param vmAutologon = true
 
-param resourceTags = {} // Add tags as needed
+param resourceTags = 'jumpstart_arcbox'
